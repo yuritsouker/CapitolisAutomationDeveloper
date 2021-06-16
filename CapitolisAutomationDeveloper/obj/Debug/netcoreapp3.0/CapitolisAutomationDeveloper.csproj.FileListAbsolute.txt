@@ -102,3 +102,4 @@ C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomation
 C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomationDeveloper\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomationDeveloper\obj\Debug\netcoreapp3.0\CapitolisAutomationDeveloper.dll
 C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomationDeveloper\obj\Debug\netcoreapp3.0\CapitolisAutomationDeveloper.pdb
+C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomationDeveloper\bin\Debug\netcoreapp3.0\NLog.dll
