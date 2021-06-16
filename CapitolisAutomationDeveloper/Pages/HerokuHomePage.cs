@@ -19,6 +19,8 @@ namespace CapitolisAutomationDeveloper.Pages
 
         IWebElement lnkExample2 => Driver.FindElement(By.LinkText("Example 2: Element rendered after the fact"));
 
+        IWebElement lnkiJquery => Driver.FindElement(By.LinkText("JQuery UI Menus"));
+
         public void NavigateToHeroku() => Driver.Navigate().GoToUrl(URL);
 
         public void ClickCheckBoxes() => lnkCheckBox.Click();
@@ -38,7 +40,7 @@ namespace CapitolisAutomationDeveloper.Pages
             lnkExample2.Click();
         }
 
-
+        public void ClickJQuery() => lnkiJquery.Click();
 
 
     }
