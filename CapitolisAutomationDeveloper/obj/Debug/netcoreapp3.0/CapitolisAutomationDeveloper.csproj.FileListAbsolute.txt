@@ -128,3 +128,4 @@ C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomation
 C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomationDeveloper\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Cng.dll
 C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomationDeveloper\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomationDeveloper\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Users\yzuck\Documents\GitHub\CapitolisAutomationDeveloper\CapitolisAutomationDeveloper\bin\Debug\netcoreapp3.0\System.Windows.Forms.dll

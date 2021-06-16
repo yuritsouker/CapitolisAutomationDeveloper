@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Windows.Forms;
 
 namespace CapitolisAutomationDeveloper.Pages
 {
@@ -20,6 +21,8 @@ namespace CapitolisAutomationDeveloper.Pages
         IWebElement lnkExample2 => Driver.FindElement(By.LinkText("Example 2: Element rendered after the fact"));
 
         IWebElement lnkiJquery => Driver.FindElement(By.LinkText("JQuery UI Menus"));
+
+        IWebElement lnkBasicAuth => Driver.FindElement(By.LinkText("Basic Auth"));
 
         public void NavigateToHeroku() => Driver.Navigate().GoToUrl(URL);
 
@@ -41,6 +44,16 @@ namespace CapitolisAutomationDeveloper.Pages
         }
 
         public void ClickJQuery() => lnkiJquery.Click();
+
+        public void ClickBasisAuth()
+        {
+            lnkBasicAuth.Click();
+            //Use System.Windows.Forms to send keys - selenium does not work with win form
+            SendKeys.Send("admin");
+            SendKeys.Send("{TAB}");
+            SendKeys.Send("admin");
+            SendKeys.Send("{ENTER}");
+        }
 
 
     }

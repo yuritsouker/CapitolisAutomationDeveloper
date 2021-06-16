@@ -157,6 +157,28 @@ namespace CapitolisAutomationDeveloper
 
         }
 
+        [Test]
+        public void BasicAuthTest()
+        {
+            HerokuHomePage herokuHomePage = new HerokuHomePage();
+
+            AuthPage authPage = new AuthPage();
+
+            log.Debug("Navigate To Heroku");
+
+            herokuHomePage.NavigateToHeroku();
+
+            herokuHomePage.ClickBasisAuth();
+
+            Assert.AreEqual("Congratulations! You must have the proper credentials.", authPage.getAuthText());
+
+            herokuHomePage.CloseBrowser();
+
+
+        }
+
+
+
 
     }
 }

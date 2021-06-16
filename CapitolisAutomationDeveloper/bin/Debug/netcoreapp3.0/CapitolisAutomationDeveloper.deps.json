@@ -15,7 +15,8 @@
           "Selenium.Support": "3.141.0",
           "Selenium.WebDriver": "3.141.0",
           "WebDriverManager": "2.11.1",
-          "NUnit": "3.12.0"
+          "NUnit": "3.12.0",
+          "System.Windows.Forms": "4.0.0.0"
         },
         "runtime": {
           "CapitolisAutomationDeveloper.dll": {}
@@ -1534,6 +1535,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "System.Windows.Forms/4.0.0.0": {
+        "runtime": {
+          "System.Windows.Forms.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.7.3056.0"
+          }
+        }
       }
     }
   },
@@ -2410,6 +2419,11 @@
       "sha512": "sha512-kqUom8Sl6FTnDlTq/M5VpkHiQQZvbRt3sKdzxzX2Y08XC5UtuMuxVTg5JZHqGGih8K4a2EdS5UU1BXyeefwcbw==",
       "path": "webdrivermanager/2.11.1",
       "hashPath": "webdrivermanager.2.11.1.nupkg.sha512"
+    },
+    "System.Windows.Forms/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
