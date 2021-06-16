@@ -82,12 +82,43 @@ namespace CapitolisAutomationDeveloper
 
             herokuHomePage.NavigateToiFrame();
 
+            log.Info("Write text To iFrame");
+
             iFramePage.WriteTextInFrame("Yuri Tsouker");
+
+            log.Info("Validate inserted text to iFrame");
 
             Assert.AreEqual(iFramePage.getTextFromtxtBox(), "Yuri Tsouker");
 
             herokuHomePage.CloseBrowser();
 
         }
+
+        [Test]
+        public void DynamicLoadingPageTest()
+        {
+            HerokuHomePage herokuHomePage = new HerokuHomePage();
+
+            DynamiclyLoadedPage dynamiclyLoadedPage = new DynamiclyLoadedPage();
+
+            log.Info("Navigate To Heroku page");
+
+            herokuHomePage.NavigateToHeroku();
+
+            log.Info("Navigate To ToElementRender page");
+
+            herokuHomePage.NavigateToElementRender();
+
+            log.Info("Get Text From Dynamicly Loaded Page");
+
+            string txt = dynamiclyLoadedPage.GetTextFromDynamiclyLoadedPage();
+
+            Assert.That(txt.Contains("Hello World!"), Is.True, "Hello World! text does not appear");
+
+            herokuHomePage.CloseBrowser();
+
+        }
+
+
     }
 }

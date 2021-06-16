@@ -15,6 +15,10 @@ namespace CapitolisAutomationDeveloper.Pages
 
         IWebElement lnkiFrame => Driver.FindElement(By.LinkText("iFrame"));
 
+        IWebElement lnkDynamicLoading => Driver.FindElement(By.LinkText("Dynamic Loading"));
+
+        IWebElement lnkExample2 => Driver.FindElement(By.LinkText("Example 2: Element rendered after the fact"));
+
         public void NavigateToHeroku() => Driver.Navigate().GoToUrl(URL);
 
         public void ClickCheckBoxes() => lnkCheckBox.Click();
@@ -26,6 +30,12 @@ namespace CapitolisAutomationDeveloper.Pages
             lnkFrames.Click();
             lnkiFrame.Click();
 
+        }
+
+        public void NavigateToElementRender()
+        {
+            lnkDynamicLoading.Click();
+            lnkExample2.Click();
         }
 
 
