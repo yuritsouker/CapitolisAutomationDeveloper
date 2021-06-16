@@ -66,5 +66,28 @@ namespace CapitolisAutomationDeveloper
             herokuHomePage.CloseBrowser();
                         
         }
+
+        [Test]
+        public void IFrameTest()
+        {
+            HerokuHomePage herokuHomePage = new HerokuHomePage();
+
+            iFramePage iFramePage = new iFramePage();
+
+            log.Info("Navigate To Heroku page");
+
+            herokuHomePage.NavigateToHeroku();
+
+            log.Info("Navigate To iFrame page");
+
+            herokuHomePage.NavigateToiFrame();
+
+            iFramePage.WriteTextInFrame("Yuri Tsouker");
+
+            Assert.AreEqual(iFramePage.getTextFromtxtBox(), "Yuri Tsouker");
+
+            herokuHomePage.CloseBrowser();
+
+        }
     }
 }

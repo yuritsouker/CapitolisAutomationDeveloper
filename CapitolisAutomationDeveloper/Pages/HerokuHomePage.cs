@@ -11,11 +11,22 @@ namespace CapitolisAutomationDeveloper.Pages
 
         IWebElement lnkCheckBox => Driver.FindElement(By.LinkText("Checkboxes"));
 
+        IWebElement lnkFrames => Driver.FindElement(By.LinkText("Frames"));
+
+        IWebElement lnkiFrame => Driver.FindElement(By.LinkText("iFrame"));
+
         public void NavigateToHeroku() => Driver.Navigate().GoToUrl(URL);
 
         public void ClickCheckBoxes() => lnkCheckBox.Click();
 
         public void CloseBrowser() => Driver.Close();
+
+        public void NavigateToiFrame()
+        {
+            lnkFrames.Click();
+            lnkiFrame.Click();
+
+        }
 
 
 
