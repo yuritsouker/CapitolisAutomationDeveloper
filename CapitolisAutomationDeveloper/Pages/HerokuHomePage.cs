@@ -15,6 +15,8 @@ namespace CapitolisAutomationDeveloper.Pages
 
         public void ClickCheckBoxes() => lnkCheckBox.Click();
 
+        public void CloseBrowser() => Driver.Close();
+
 
 
 
